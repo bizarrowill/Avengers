@@ -1,0 +1,25 @@
+{
+  "name": "avengers",
+  "version": "1.0.0",
+  "description": "Avengers Character App w/Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizarrowill/Avengers.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "william robertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizarrowill/Avengers/issues"
+  },
+  "homepage": "https://github.com/bizarrowill/Avengers#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
