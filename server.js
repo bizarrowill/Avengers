@@ -2,7 +2,7 @@ let express = require("express");
 let path = require("path");
 let app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -36,6 +36,7 @@ app.listen(PORT, function() {
   console.log(`Avengers assembled on Port: ${PORT}`);
 });
 
+// Routes
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
@@ -44,6 +45,7 @@ app.get("/add", function(req, res) {
   res.sendFile(path.join(__dirname, "add.html"));
 });
 
+// API
 app.get("/api/v1/characters", function(req, res) {
   return res.json(characters);
 });
